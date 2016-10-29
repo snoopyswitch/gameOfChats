@@ -12,6 +12,7 @@
 		999895881DC3FC8400A9CD87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999895861DC3FC8400A9CD87 /* Main.storyboard */; };
 		9998958A1DC3FC8400A9CD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999895891DC3FC8400A9CD87 /* Assets.xcassets */; };
 		9998958D1DC3FC8400A9CD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9998958B1DC3FC8400A9CD87 /* LaunchScreen.storyboard */; };
+		999895961DC4004A00A9CD87 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999895951DC4004A00A9CD87 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		999895891DC3FC8400A9CD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9998958C1DC3FC8400A9CD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9998958E1DC3FC8400A9CD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999895951DC4004A00A9CD87 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		999895811DC3FC8400A9CD87 /* GameOfChats */ = {
 			isa = PBXGroup;
 			children = (
+				999895941DC3FFD800A9CD87 /* Controller */,
 				999895821DC3FC8400A9CD87 /* AppDelegate.swift */,
-				999895841DC3FC8400A9CD87 /* ViewController.swift */,
 				999895861DC3FC8400A9CD87 /* Main.storyboard */,
 				999895891DC3FC8400A9CD87 /* Assets.xcassets */,
 				9998958B1DC3FC8400A9CD87 /* LaunchScreen.storyboard */,
 				9998958E1DC3FC8400A9CD87 /* Info.plist */,
 			);
 			path = GameOfChats;
+			sourceTree = "<group>";
+		};
+		999895941DC3FFD800A9CD87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				999895951DC4004A00A9CD87 /* LoginController.swift */,
+				999895841DC3FC8400A9CD87 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +107,6 @@
 				TargetAttributes = {
 					9998957E1DC3FC8300A9CD87 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = VEAT7QBV74;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				999895851DC3FC8400A9CD87 /* ViewController.swift in Sources */,
+				999895961DC4004A00A9CD87 /* LoginController.swift in Sources */,
 				999895831DC3FC8400A9CD87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VEAT7QBV74;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GameOfChats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = boca.GameOfChats;
@@ -274,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VEAT7QBV74;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GameOfChats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = boca.GameOfChats;
