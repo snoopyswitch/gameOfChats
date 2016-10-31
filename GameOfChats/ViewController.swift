@@ -15,15 +15,26 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //let ref = FIRDatabase.database().reference(fromURL: "https://gameofchats-cbea8.firebaseio.com/")
-        //ref.updateChildValues(["someValue": 123123])
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
         
+        if FIRAuth.auth()?.currentUser?.uid == nil {//user is not logged in
+            
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+            
+            
+        }
     }
     
     
     func handleLogout () {
+        
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+        
         
         let loginController = LoginController()
         
