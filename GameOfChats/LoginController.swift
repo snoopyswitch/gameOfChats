@@ -52,7 +52,7 @@ class LoginController: UIViewController {
         FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: {(user, error) in
             
             if error != nil {
-                print(error)
+                print(error!)
                 return
             }
             // successfully logged in our user
@@ -69,7 +69,7 @@ class LoginController: UIViewController {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: {(user: FIRUser?, error) in
         
             if error != nil {
-                print(error)
+                print(error!)
                 return
             }
             
@@ -84,7 +84,7 @@ class LoginController: UIViewController {
             usersRefrence.updateChildValues(values, withCompletionBlock: {(err, ref) in
                 
                 if err != nil {
-                    print(err)
+                    print(err!)
                     return
                 }
                 
