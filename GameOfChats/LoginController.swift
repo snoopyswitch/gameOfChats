@@ -60,40 +60,7 @@ class LoginController: UIViewController {
         })
     }
     
-    func handleRegister() {
-        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text else {
-            print("Form is not valid")
-            return
-        }
-        
-        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: {(user: FIRUser?, error) in
-        
-            if error != nil {
-                print(error!)
-                return
-            }
-            
-            guard let uid = user?.uid else {
-                return
-            }
-            
-            let ref = FIRDatabase.database().reference(fromURL: "https://gameofchats-cbea8.firebaseio.com/")
-            let usersRefrence = ref.child("users").child(uid)
-            let values = ["name": name, "email": email]
-            
-            usersRefrence.updateChildValues(values, withCompletionBlock: {(err, ref) in
-                
-                if err != nil {
-                    print(err!)
-                    return
-                }
-                
-                self.dismiss(animated: true, completion: nil)
-            
-            })
-        
-        })
-    }
+    
     
     
     
@@ -140,13 +107,20 @@ class LoginController: UIViewController {
     }()
     
     
-    let profileImageView: UIImageView = {
+    
+    
+    lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "gameofthrones_splash")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelectProfileImageView)))
+        imageView.isUserInteractionEnabled = true
+        
         return imageView
     }()
+
     
     
     lazy var loginRegisterSegmentedControl: UISegmentedControl = {

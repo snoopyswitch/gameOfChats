@@ -17,6 +17,7 @@
 		9998958A1DC3FC8400A9CD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999895891DC3FC8400A9CD87 /* Assets.xcassets */; };
 		9998958D1DC3FC8400A9CD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9998958B1DC3FC8400A9CD87 /* LaunchScreen.storyboard */; };
 		999895961DC4004A00A9CD87 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999895951DC4004A00A9CD87 /* LoginController.swift */; };
+		99A40DC01DCA5D2A00482BA4 /* LoginController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A40DBF1DCA5D2A00482BA4 /* LoginController+Handlers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9998958C1DC3FC8400A9CD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9998958E1DC3FC8400A9CD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999895951DC4004A00A9CD87 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		99A40DBF1DCA5D2A00482BA4 /* LoginController+Handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginController+Handlers.swift"; sourceTree = "<group>"; };
 		CD5BC1C2A745DD0DD7000DDA /* Pods-GameOfChats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfChats.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameOfChats/Pods-GameOfChats.release.xcconfig"; sourceTree = "<group>"; };
 		F8A3ADCD337E8354428FE8EC /* Pods-GameOfChats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfChats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameOfChats/Pods-GameOfChats.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				999895841DC3FC8400A9CD87 /* MessagesController.swift */,
 				999895951DC4004A00A9CD87 /* LoginController.swift */,
 				991CFA8D1DC7BF19003A61D9 /* NewMessageController.swift */,
+				99A40DBF1DCA5D2A00482BA4 /* LoginController+Handlers.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A40DC01DCA5D2A00482BA4 /* LoginController+Handlers.swift in Sources */,
 				991CFA8E1DC7BF19003A61D9 /* NewMessageController.swift in Sources */,
 				999895851DC3FC8400A9CD87 /* MessagesController.swift in Sources */,
 				999895961DC4004A00A9CD87 /* LoginController.swift in Sources */,
