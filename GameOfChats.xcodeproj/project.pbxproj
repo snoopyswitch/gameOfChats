@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D6C7FAF4CD24E22F46DFF52 /* Pods_GameOfChats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360CAB31F706ABB1B284890B /* Pods_GameOfChats.framework */; };
+		990EB7241DD1DA3E00001BA6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990EB7231DD1DA3E00001BA6 /* Extensions.swift */; };
 		991CFA8E1DC7BF19003A61D9 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991CFA8D1DC7BF19003A61D9 /* NewMessageController.swift */; };
 		9957A61E1DC52B49008D4537 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9957A61D1DC52B49008D4537 /* GoogleService-Info.plist */; };
 		9981E1451DC8FDC6001DAAFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9981E1441DC8FDC6001DAAFE /* User.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		360CAB31F706ABB1B284890B /* Pods_GameOfChats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameOfChats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		990EB7231DD1DA3E00001BA6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		991CFA8D1DC7BF19003A61D9 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		991CFA8F1DC7CA7B003A61D9 /* GameOfChats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameOfChats.entitlements; sourceTree = "<group>"; };
 		9957A61D1DC52B49008D4537 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		990EB7221DD1DA2200001BA6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				990EB7231DD1DA3E00001BA6 /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		9981E1431DC8FDA1001DAAFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		999895811DC3FC8400A9CD87 /* GameOfChats */ = {
 			isa = PBXGroup;
 			children = (
+				990EB7221DD1DA2200001BA6 /* Helpers */,
 				9981E1431DC8FDA1001DAAFE /* Model */,
 				991CFA8F1DC7CA7B003A61D9 /* GameOfChats.entitlements */,
 				999895941DC3FFD800A9CD87 /* Controller */,
@@ -257,6 +268,7 @@
 				999895961DC4004A00A9CD87 /* LoginController.swift in Sources */,
 				9981E1451DC8FDC6001DAAFE /* User.swift in Sources */,
 				999895831DC3FC8400A9CD87 /* AppDelegate.swift in Sources */,
+				990EB7241DD1DA3E00001BA6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
